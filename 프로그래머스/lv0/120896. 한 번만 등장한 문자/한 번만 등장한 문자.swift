@@ -7,7 +7,6 @@ func solution(_ s:String) -> String {
     // 반복문 안에서 각 문자의 첫번째와 마지막 인덱스를 비교하여 같은경우 uniqueArr에 append해준다.
     for i in 0..<sArr.count {
         if sArr.firstIndex(of: sArr[i])! == sArr.lastIndex(of: sArr[i])! {
-            print(sArr[i])
             uniqueArr.append(sArr[i])
         }
     }
