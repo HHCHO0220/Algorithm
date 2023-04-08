@@ -8,7 +8,7 @@ func solution(_ a:Int, _ b:Int, _ n:Int) -> Int {
     while n >= a {
         if n >= a {
             change = n / a
-            n = n - (change * a) + (b * change)
+            n += (b - a) * change
             result += b * change
         }
     }
